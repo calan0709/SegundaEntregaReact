@@ -1,0 +1,46 @@
+
+/*-----------------INGRESAR---------------------------------*/
+.ingreso{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.33);
+}
+
+h2{
+    margin: 3px;
+    color: rgb(7, 30, 105);
+}
+
+label{
+    color: blue;
+    padding: 3px;
+}
+
+input{
+    font-size: 15px;
+    width: 20%;
+    background-color: transparent;
+}
+
+.generar{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.409);
+}
+
+/* --------------------NAV------------------------------------- */
+
+.navcss{
+    display:flex;
+    flex-wrap: nowrap;
+    background-color: rgb(56, 60, 60);
+}
+
+.navcss h1{ color: rgb(12, 129, 129);}
+
+.navcss .btnnav{
+    color: rgb(6, 7, 7);
+    background-color: transparent;
+    font-size: 20px;
+    margin: 26px;
+}
