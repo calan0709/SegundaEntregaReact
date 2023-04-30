@@ -1,0 +1,51 @@
+[
+    {  
+        "id" : 2412,
+        "name": "Gel Exfoleante",
+        "marca" : "Asepxia",
+        "detalle" : "Facial con acido salicilico carbon detox 120gr",
+        "precio" : 1601,
+        "stock" : 30,
+        "imagen" : "https://i0.wp.com/www.argensend.com/wp-content/uploads/2023/03/163995-1200-1200.jpeg?fit=1200%2C1200&ssl=1"
+    },
+  
+    {
+        "id" : 3422,
+        "name": "Colageno Hidrolizado",
+        "marca" : "Fynutrition",
+        "detalle" : "Contiene vitamina C y Acido Hialuronico, 360gr",
+        "precio" : 5600,
+        "stock" : 23,
+        "imagen" :"https://www.google.com.ar/url?sa=i&url=https%3A%2F%2Fwww.fynutrition.com%2Fproducts%2Fcolageno-hidrolizado&psig=AOvVaw2qa0AqtGH5UJG1Mkh5q8P8&ust=1682207051076000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNiOouCTvP4CFQAAAAAdAAAAABAH"
+    },
+
+    {
+        "id" : 6455,
+        "name": "Curplex Plus",
+        "marca" : "Gramon Millet",
+        "detalle" : "Colageno, Magnesio, Potacio x 30 Comp.",
+        "precio" : 3216,
+        "stock" : 55,
+        "imagen" : "https://www.google.com.ar/url?sa=i&url=https%3A%2F%2Fwww.farmaplus.com.ar%2Fcurflex-plus-colageno-y-magnesio--potasio-30-comp%2Fp&psig=AOvVaw1TyXlRZKFga7c_Wo4Wij2C&ust=1682208839377000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOiFhLWavP4CFQAAAAAdAAAAABAG"
+    },
+
+    {
+        "id" : 3244,
+        "name": "Hepatalgina",
+        "marca" : "ELEA",
+        "detalle" : "Estimula la función del hígado y de la vesícula biliar. 120ml",
+        "precio" : 1969,
+        "stock" : 37,
+        "imagen" : "https://www.google.com.ar/url?sa=i&url=https%3A%2F%2Fwww.farmaplus.com.ar%2Fhepatalgina-gotas-x120ml%2Fp&psig=AOvVaw2rbERxKTxNuSK2Y5r9p6dM&ust=1682211930020000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIjy5falvP4CFQAAAAAdAAAAABAI"
+    },
+
+    {
+        "id" : 9879,
+        "name": "Graviton Multivitaminico",
+        "marca" : "Alioth",
+        "detalle" : "Multivitamínico y Multimineral, 30 Comp.",
+        "precio" : 1711,
+        "stock" : 42,
+        "imagen" : "https://www.google.com.ar/url?sa=i&url=https%3A%2F%2Ffarmaciazentner.com.ar%2Fproducto%2Fgraviton-multivitaminico-multimineral-30-comprimidos%2F&psig=AOvVaw16YCEujgWI747U8ZLmi552&ust=1682212157609000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIjgnuOmvP4CFQAAAAAdAAAAABAL"
+    }
+]

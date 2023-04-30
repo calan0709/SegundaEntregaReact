@@ -1,9 +1,12 @@
+body{
+    background-color: rgb(128, 128, 128);
+}
 
 /*-----------------INGRESAR---------------------------------*/
 .ingreso{
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.33);
+    background-color: rgba(255, 255, 255, 0.33);
 }
 
 h2{
@@ -30,17 +33,44 @@ input{
 
 /* --------------------NAV------------------------------------- */
 
-.navcss{
+.navcss{width: 100%;
     display:flex;
-    flex-wrap: nowrap;
-    background-color: rgb(56, 60, 60);
+    flex-flow: row;
+    align-items: center;
+    text-align:center;
+    background-color: rgba(243, 239, 242, 0.993);
 }
 
 .navcss h1{ color: rgb(12, 129, 129);}
-
+.navcss .navbtn{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    text-align: center;
+    
+}
 .navcss .btnnav{
-    color: rgb(6, 7, 7);
+    color: rgb(37, 151, 151);
     background-color: transparent;
     font-size: 20px;
     margin: 26px;
+    border: none;
 }
+
+/* ------------------------Productos----------------------------- */
+.contenidotarjeta{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.tarjetas{width:30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 5px;
+}
+.tarjetas button{background-color: black;
+width: 100%;}

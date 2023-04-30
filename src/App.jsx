@@ -5,15 +5,18 @@ import './App.css'
 import { Navbar } from './componente/Navbar'
 import { Contenedor } from './componente/Contenedor'
 import { Ingresar } from './componente/Ingresar'
+import { Productos } from './componente/Productos'
 
-function App() {
+function App({msg}) {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    {/* <Navbar/> */}
+    {/* <Navbar/>  */}
     <h1>holis</h1>
+    <h4>{msg}</h4>
     {/* <Ingresar/> */}
+    <Productos/>
     
     </>
   )
