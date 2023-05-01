@@ -13,8 +13,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
 <BrowserRouter>
+    <Navbar/>
   <Routes>
-
+    
     <Route path='/' element={<App msg={"Ruta raiz"}/>}/>
     <Route path='/Productos' element={<Productos msg={"Productos"}/>}/>
     <Route path='/Ingresar' element={<Ingresar msg={"Ingresar"}/>}/>

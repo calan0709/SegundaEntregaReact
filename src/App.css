@@ -9,7 +9,7 @@ body{
     background-color: rgba(255, 255, 255, 0.33);
 }
 
-h2{
+h1{
     margin: 3px;
     color: rgb(7, 30, 105);
 }
@@ -42,19 +42,17 @@ input{
 }
 
 .navcss h1{ color: rgb(12, 129, 129);}
-.navcss .navbtn{
+.navcss .navbtn ul {
     width: 100%;
     display: flex;
     align-items:center;
     text-align: center;
     
 }
-.navcss .btnnav{
-    color: rgb(37, 151, 151);
-    background-color: transparent;
-    font-size: 20px;
-    margin: 26px;
-    border: none;
+
+.nav-link:hover,
+.nav-link.active{
+    color: red;
 }
 
 /* ------------------------Productos----------------------------- */

@@ -1,11 +1,19 @@
+import { useParams, useNavigate } from 'react-router-dom'
 
 
 export const Ingresar = () => {
+
+  const params =useParams()
+  const navigate = useNavigate()
+  const onBack = () =>{
+    navigate(-1)
+  }
+
   return (
     <div className='tarjeraingreso'>
         <img src="" alt="" />
         <div className='ingreso'>
-        <h2>Ingresar</h2>
+        <h1>Ingresar</h1>
             <label htmlFor="">Usuario</label>
             <input type="text" />
             <label htmlFor="">Contraseña</label>
@@ -25,6 +33,7 @@ export const Ingresar = () => {
             <input type="text" />
             <input type="submit" />
         </form>
+        <button onClick={onBack}>Volver</button>
     </div>
   )
 }

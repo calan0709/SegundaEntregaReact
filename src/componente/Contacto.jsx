@@ -1,6 +1,14 @@
-import React from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
+
 
 export const Contacto = () => {
+
+  const params =useParams()
+  const navigate = useNavigate()
+  const onBack = () =>{
+    navigate(-1)
+  }
+
   return (
     <>
         

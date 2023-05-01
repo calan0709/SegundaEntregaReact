@@ -12,11 +12,8 @@ function App({msg}) {
 
   return (
     <>
-    {/* <Navbar/>  */}
+
     <h1>holis</h1>
-    <h4>{msg}</h4>
-    {/* <Ingresar/> */}
-    <Productos/>
     
     </>
   )
