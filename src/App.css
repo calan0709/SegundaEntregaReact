@@ -1,5 +1,9 @@
 body{
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(255, 255, 255);
+}
+
+.inicio{
+    width: 100%;
 }
 
 /*-----------------INGRESAR---------------------------------*/
@@ -8,7 +12,11 @@ body{
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.33);
 }
+.tarjeraingreso img{
+    position:relative;
+    width: 100%;
 
+}
 h1{
     margin: 3px;
     color: rgb(7, 30, 105);
@@ -32,22 +40,39 @@ input{
 }
 
 /* --------------------NAV------------------------------------- */
-
+.navcss img {
+    width: 4%;
+    
+}
 .navcss{width: 100%;
     display:flex;
-    flex-flow: row;
     align-items: center;
     text-align:center;
     background-color: rgba(243, 239, 242, 0.993);
+    
 }
 
 .navcss h1{ color: rgb(12, 129, 129);}
-.navcss .navbtn ul {
-    width: 100%;
+.navcss .navbtn{
     display: flex;
-    align-items:center;
-    text-align: center;
+    width: 100%;
     
+}
+.navcss .navbtn ul{
+    display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+}
+.navcss .navbtn ul li{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    text-align: center; 
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+
 }
 
 .nav-link:hover,
@@ -70,5 +95,22 @@ input{
     padding: 5px;
     margin: 5px;
 }
+.tarjetas img{
+    width: 100%;
+}
 .tarjetas button{background-color: black;
-width: 100%;}
+width: 100%;
+color: white;}
+
+/* --------------------Contacto------------------------------ */
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    
+}
+form textarea{
+    color: black;
+    width: 20%;
+}

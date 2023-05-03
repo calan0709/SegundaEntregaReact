@@ -4,6 +4,7 @@ import { Ingresar } from './Ingresar'
 import { Contacto } from './Contacto'
 import { Carro } from './Carro'
 import { Link, NavLink } from 'react-router-dom'
+import icono from './img/farmacia.png'
 
 export const Navbar = ({mgs}) => {
 
@@ -26,6 +27,7 @@ export const Navbar = ({mgs}) => {
             </ul>
               <Carro/>
           </div>
+          <img src={icono}></img>
         </nav>
     </>
   )

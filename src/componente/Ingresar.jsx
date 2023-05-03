@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom'
-
+import imagenfarma from './img/ingresar.png'
 
 export const Ingresar = () => {
 
@@ -11,7 +11,7 @@ export const Ingresar = () => {
 
   return (
     <div className='tarjeraingreso'>
-        <img src="" alt="" />
+        <img src={imagenfarma} alt=""></img>
         <div className='ingreso'>
         <h1>Ingresar</h1>
             <label htmlFor="">Usuario</label>

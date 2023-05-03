@@ -25,7 +25,7 @@ export const Productos = () => {
                   <a>Detalle: {productos.detalle}</a>
                   <a>Precio: {productos.precio}</a>
                   <a>Stock: {productos.stock}</a>
-                  <p>{productos.imagen}</p>
+                  <img src={productos.imagen}></img>
                   <button >Agregar a Carro</button>
 
                 </li>
