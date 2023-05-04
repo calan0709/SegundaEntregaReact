@@ -7,23 +7,27 @@ body{
 }
 
 /*-----------------INGRESAR---------------------------------*/
-.ingreso{
+.ingreso{width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.33);
-}
-.tarjeraingreso img{
+    background-color: transparent;
     position:relative;
-    width: 100%;
-
 }
-h1{
+
+
+.tarjeraingreso img{
+    position:absolute;
+    width: 100%;
+}
+h2{
+    font-size: 18px;
     margin: 3px;
-    color: rgb(7, 30, 105);
+    color: rgb(237, 238, 242);
 }
 
 label{
-    color: blue;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
     padding: 3px;
 }
 
@@ -36,7 +40,13 @@ input{
 .generar{
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.409);
+    background-color: rgba(0, 0, 0, 0.012);
+    position: absolute;
+}
+.generar input{
+    width: 90%;
+    font-size: 15px;
+    margin: 5px;
 }
 
 /* --------------------NAV------------------------------------- */

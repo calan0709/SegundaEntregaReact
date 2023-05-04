@@ -13,7 +13,7 @@ export const Ingresar = () => {
     <div className='tarjeraingreso'>
         <img src={imagenfarma} alt=""></img>
         <div className='ingreso'>
-        <h1>Ingresar</h1>
+        <h2>Ingresar</h2>
             <label htmlFor="">Usuario</label>
             <input type="text" />
             <label htmlFor="">Contraseña</label>
