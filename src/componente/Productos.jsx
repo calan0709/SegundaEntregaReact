@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import listaproductos from './Producto.json'
+import { Detalles } from './Detalles'
 
 export const Productos = () => {
   
@@ -21,12 +22,9 @@ export const Productos = () => {
               listaproductos.map( productos => (
                 <li key={productos.id} className='tarjetas'>
                   <a>Nombre: {productos.name}</a>
-                  <a>Marca: {productos.marca}</a>
-                  <a>Detalle: {productos.detalle}</a>
-                  <a>Precio: {productos.precio}</a>
-                  <a>Stock: {productos.stock}</a>
                   <img src={productos.imagen}></img>
                   <button >Agregar a Carro</button>
+                  <button >Detalles  </button>
 
                 </li>
               ))
