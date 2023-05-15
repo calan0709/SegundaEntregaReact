@@ -18,6 +18,7 @@ export const Ingresar = () => {
             <input type="text" />
             <label htmlFor="">Contraseña</label>
             <input type="text" />
+            <button>Ingresar</button>
         </div>
         <form action="" className='generar'>
             <h2>Suscribite</h2>

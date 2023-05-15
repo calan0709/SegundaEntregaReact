@@ -13,8 +13,9 @@ export const Navbar = ({mgs}) => {
   return (
     <>
        <nav className='navcss'>
-          {/* <img src={farmacia}/> */}
           <h1>FarmaciaTrader</h1>
+          <img src={icono}></img>
+          <input className='buscador' type='search' autoComplete='off' placeholder='¿Que estas buscando?' ></input>
           <div className='navbtn'>
             <ul>
 
@@ -27,7 +28,6 @@ export const Navbar = ({mgs}) => {
             </ul>
               <Carro/>
           </div>
-          <img src={icono}></img>
         </nav>
     </>
   )

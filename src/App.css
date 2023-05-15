@@ -121,6 +121,67 @@ form {
     
 }
 form textarea{
+    width: 100%;
     color: black;
     width: 20%;
+}
+
+/* -----------------------Ofertas----------------------------- */
+
+.carddescuentos{
+    width: 100%;
+    display: flex;
+    border: solid;
+
+}
+.carddescuentos div{
+    width: 100%;
+    margin: 2px;
+    padding: 2px;
+    align-items: center;
+    text-align: center;
+    border: solid;
+    border-radius: 8px;
+}
+.carddescuentos div img{
+    width: 100%;
+    margin: 2px;
+    padding: 2px;
+
+}
+
+.cardoferta{
+    width: 100%;
+    display: flex;
+}
+.cardoferta div{
+    width: 100%;
+    margin: 2px;
+    padding: 2px;
+    align-items: center;
+    text-align: center;
+}
+.cardoferta div img{
+    width: 100%;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+.cardmasofertas{
+    width: 100%;
+    display: flex;
+}
+.cardmasofertas div{
+    width: 100%;
+    margin: 2px;
+    padding: 2px;
+    align-items: center;
+    text-align: center;
+}
+.cardmasofertas div img{
+    width: 100%;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 8px;
 }
