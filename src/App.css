@@ -1,52 +1,22 @@
+
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(189, 129, 129);
+    background-image: url(./componente/img/fondofarmacia.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+   
 }
 
 .inicio{
     width: 100%;
-}
-
-/*-----------------INGRESAR---------------------------------*/
-.ingreso{width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
     position:relative;
+
+
 }
-
-
-.tarjeraingreso img{
-    position:absolute;
+.bienvenidos{
     width: 100%;
-}
-h2{
-    font-size: 18px;
-    margin: 3px;
-    color: rgb(237, 238, 242);
-}
-
-label{
-    font-size: 13px;
-    color: rgb(255, 255, 255);
-    padding: 3px;
-}
-
-input{
-    font-size: 15px;
-    width: 20%;
-    background-color: transparent;
-}
-
-.generar{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.012);
-    position: absolute;
-}
-.generar input{
-    width: 90%;
-    font-size: 15px;
-    margin: 5px;
+    color: rgb(239, 239, 239);
 }
 
 /* --------------------NAV------------------------------------- */
@@ -58,11 +28,11 @@ input{
     display:flex;
     align-items: center;
     text-align:center;
-    background-color: rgba(243, 239, 242, 0.993);
+    background-color: rgba(1, 0, 0, 0.149);
     
 }
 
-.navcss h1{ color: rgb(12, 129, 129);}
+.navcss h1{ color: rgb(19, 165, 178);}
 .navcss .navbtn{
     display: flex;
     width: 100%;
@@ -83,6 +53,13 @@ input{
     font-size: 18px;
     width: 100%;
 
+}
+.navcss .navbtn ul li img{
+    width: 18%;
+}
+.nav-link{
+    color: aquamarine;
+    text-decoration: none;
 }
 
 .nav-link:hover,
@@ -112,76 +89,5 @@ input{
 width: 100%;
 color: white;}
 
-/* --------------------Contacto------------------------------ */
+/* -------------------------------- */
 
-form {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    
-}
-form textarea{
-    width: 100%;
-    color: black;
-    width: 20%;
-}
-
-/* -----------------------Ofertas----------------------------- */
-
-.carddescuentos{
-    width: 100%;
-    display: flex;
-    border: solid;
-
-}
-.carddescuentos div{
-    width: 100%;
-    margin: 2px;
-    padding: 2px;
-    align-items: center;
-    text-align: center;
-    border: solid;
-    border-radius: 8px;
-}
-.carddescuentos div img{
-    width: 100%;
-    margin: 2px;
-    padding: 2px;
-
-}
-
-.cardoferta{
-    width: 100%;
-    display: flex;
-}
-.cardoferta div{
-    width: 100%;
-    margin: 2px;
-    padding: 2px;
-    align-items: center;
-    text-align: center;
-}
-.cardoferta div img{
-    width: 100%;
-    margin: 2px;
-    padding: 2px;
-    border-radius: 8px;
-}
-
-.cardmasofertas{
-    width: 100%;
-    display: flex;
-}
-.cardmasofertas div{
-    width: 100%;
-    margin: 2px;
-    padding: 2px;
-    align-items: center;
-    text-align: center;
-}
-.cardmasofertas div img{
-    width: 100%;
-    margin: 2px;
-    padding: 2px;
-    border-radius: 8px;
-}
