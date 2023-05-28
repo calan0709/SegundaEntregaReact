@@ -9,6 +9,8 @@ import { Carro } from './componente/Carro.jsx'
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { Detalles } from './componente/Detalles.jsx'
+import { Checkout } from './componente/Checkout.jsx'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -35,7 +37,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Route path='/' element={<App msg={"Ruta raiz"}/>}/>
     <Route path='/Productos' element={<Productos msg={"Productos"}/>}/>
     <Route path='/Carro' element={<Carro msg={"Carro"}/>}/>
+    <Route path='/Detalles/:productid' element={<Detalles/>}/>
     <Route path='/*' element={<App msg={"Ruta por Defecto"}/>}/>
+    <Route path='/Checkout' element={<Checkout />}/>
     
   </Routes>
 </BrowserRouter>

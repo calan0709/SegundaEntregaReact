@@ -3,6 +3,7 @@ import { Productos } from './Productos'
 import { Carro } from './Carro'
 import { Link, NavLink } from 'react-router-dom'
 import icono from './img/farmacia.png'
+import { Detalles } from './Detalles'
 
 export const Navbar = ({mgs}) => {
 

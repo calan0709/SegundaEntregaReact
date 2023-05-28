@@ -3,43 +3,50 @@ import {doc, getDoc, getFirestore} from 'firebase/firestore'
 import { useNavigate, useParams } from "react-router-dom"
 
 
+
 export const Detalles = () => {
   const navigate = useNavigate()
-  const db = getFirestore()
-  const params = useParams
+  const db = getFirestore();
+  const params = useParams()
   const {productid} = params
   const [product, setProducts] = useState(null)
   /* ----------------------------- */
-
-useEffect(()=>{
-const itemdb = doc (db, 'productos', productid)
+  
+  useEffect(()=>{
+const itemdb = doc (db, 'productos', productid )
 getDoc(itemdb)
 .then((product)=>{
   if (product.exists()){
     setProducts({id: product.id, ...product.data()})
-  }
+  } 
 })
 }
 )
 
   /* ----------------------------- */
 
-  const onBack = () => {
+const onBack = () => {
     navigate(-1)
-  }
+  } 
   return (
     <>
-    {
+ {
       product
       ?
-      <div>Detalles
-
-      <button onClick={onBack}></button>
+      <div className="detall">
+        <p>Nombre : {product.name}</p>
+        <p>Marca : {product.marca}</p>
+        <p>Detalle : {product.detalle}</p>
+        <p>Precio : {product.precio}</p>
+        <p>Stock: {product.stock}</p>
+        <img src={product.img}></img>
+        <button className="agregarcarro" >Agregar a Carro</button>
+        <button onClick={onBack}>Volver</button>
       </div>
       :
       <h3>Loading...</h3>
     } 
-    
+     
     </>
   )
 }

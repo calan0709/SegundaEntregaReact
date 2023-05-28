@@ -69,7 +69,6 @@ body{
 /* ------------------------Productos----------------------------- */
 .contenidotarjeta{
     display: flex;
-    flex-wrap: wrap;
 
 }
 .produc{
@@ -77,15 +76,14 @@ body{
 }
 .tarjetas{width:15%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    flex-wrap:wrap;
     border: solid;
     border-radius: 7px;
     padding: 5px;
     margin: 5px;
     background-color: white;
     text-align: center;
-    
 }
 .tarjetas img{
     width: 100%;
@@ -96,5 +94,32 @@ color: white;
 margin: 2px;
 }
 
-/* -------------------------------- */
 
+/* ---------------DETALLE----------------- */
+
+.detall{
+    width: 100%;
+    border: solid;
+    text-align: center;
+}
+.detall p{
+    color: antiquewhite;
+}
+.detall img{
+    width: 30%;
+}
+.detall .agregarcarro{
+    background-color:  rgb(233, 233, 210);
+    position:fixed;
+    top: 92%;
+    left: 90%;
+    border-radius: 50%;
+}
+.detall button{
+    background-color: rgb(233, 233, 210);
+    position:fixed;
+    top: 94%;
+    left: 2%;
+    border-radius: 50%;
+
+}
