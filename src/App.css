@@ -123,3 +123,19 @@ margin: 2px;
     border-radius: 50%;
 
 }
+/* ----------------------------Ofertas------------------------------ */
+.tarjetaofertas{
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.352);
+}
+.tarjetaofertas .offertas{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+.tarjetaofertas .offertas img{
+    width: 100%;
+}

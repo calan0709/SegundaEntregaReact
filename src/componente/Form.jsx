@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+
 export const Form = () => {
 
 const ckeckoutForm = ({onConfirm})=>{
@@ -19,7 +20,7 @@ const ckeckoutForm = ({onConfirm})=>{
 
   return (
     <div className='formulario'>
-        <form onSubmit={handleConfirm} className='form'>
+      {/*   <form onSubmit={handleConfirm} className='form'>
             <label className='label'>
                 Nombre
                 <input
@@ -51,7 +52,7 @@ const ckeckoutForm = ({onConfirm})=>{
                 <button type='submit' className='btn'>Crear Orden</button>
             </div>
 
-        </form>
+        </form> */}
 
     </div>
   )

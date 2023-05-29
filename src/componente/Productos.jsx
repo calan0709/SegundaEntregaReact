@@ -4,11 +4,17 @@ import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
 export const Productos = () => {
- const navigate = useNavigate()
- /* --------------- */
- 
- const db = getFirestore()
- const [products, setProducts] = useState([])
+  
+  const carboton = ()=>{
+    const [caritems, setcaritems] = useState(0)
+    const carroadd = () =>{ setcaritems (caritems + 1)}
+  }
+  
+  const navigate = useNavigate()
+  /* --------------- */
+  
+  const db = getFirestore()
+  const [products, setProducts] = useState([])
  
  useEffect(() => {
    const productsdb = collection(db, 'productos')
@@ -24,12 +30,12 @@ export const Productos = () => {
   const onBack = () =>{
     navigate(-1)
   }
-
- 
- /*  const fdetalles = ()=>{
+  
+  
+  /*  const fdetalles = ()=>{
     <Link to={`/Detalles/${products.id}`}>{products.name}</Link>
   }  */
-
+  
   return (
     <> 
  
@@ -45,7 +51,7 @@ export const Productos = () => {
               <li key={products.id}>
                 <Link to={`/Detalles/${products.id}`}>{products.name}</Link>
                 <img src={products.img}></img>
-                <button >Agregar a Carro</button>
+                <button onClick={carboton}>Agregar a Carro</button>
                {/* <button onClick={fdetalles}>Detalle </button> */}
               </li>
             ))
@@ -56,7 +62,7 @@ export const Productos = () => {
       </>
       :
       <h3>Loading...</h3>
-      }
+    }
   
     </>
   )
