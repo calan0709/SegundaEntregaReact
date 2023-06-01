@@ -5,10 +5,6 @@ import { Link } from 'react-router-dom'
 
 export const Productos = () => {
   
-  const carboton = ()=>{
-    const [caritems, setcaritems] = useState(0)
-    const carroadd = () =>{ setcaritems (caritems + 1)}
-  }
   
   const navigate = useNavigate()
   /* --------------- */
@@ -48,11 +44,10 @@ export const Productos = () => {
         <ul className='tarjetas'>
           {
             products.map(products=>(
-              <li key={products.id}>
+              <li key={products.id} className='lista'>
                 <Link to={`/Detalles/${products.id}`}>{products.name}</Link>
                 <img src={products.img}></img>
-                <button onClick={carboton}>Agregar a Carro</button>
-               {/* <button onClick={fdetalles}>Detalle </button> */}
+                <button >Agregar a Carro</button>
               </li>
             ))
           }

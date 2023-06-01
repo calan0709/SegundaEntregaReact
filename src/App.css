@@ -68,22 +68,37 @@ body{
 
 /* ------------------------Productos----------------------------- */
 .contenidotarjeta{
-    display: flex;
-
+   display: flex;
+   flex-direction: column;
 }
 .produc{
     color: aliceblue;
 }
-.tarjetas{width:15%;
+.tarjetas{width:80%;
     height: 100%;
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-direction:row;
+    
     border: solid;
     border-radius: 7px;
     padding: 5px;
     margin: 5px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     text-align: center;
+    align-items: center;
+
+    
+}
+.tarjetas li{
+    width: 100%;
+    padding: 2px;
+    margin: 20px;
+
+}
+a{
+    width: 100%;
+    text-decoration: none;
+    color: rgb(6, 6, 6);
 }
 .tarjetas img{
     width: 100%;
