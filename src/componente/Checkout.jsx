@@ -1,37 +1,70 @@
-import { Timestamp, collection, documentId, getDoc, getDocs, query, where, writeBatch } from 'firebase/firestore'
-import React from 'react'
-import { useState } from 'react'
+
+import React, { useRef } from 'react'
+import { useForm } from 'react-hook-form'
 
 
 export const Checkout = () => {
-/* const [Loading, setLoading] = useState(false)
-const [orderid, setOrderid] = useState('')
+  
+  const inputRef = useRef()
 
-const createOrder = async ({nombre, tel, email}) =>{
-    setLoading(true)
-try{
-    const obOrder={
-        buyer:{nombre, tel, email},
-        items:cart,
-        total:total,
-        date: Timestamp.fromDate(new Data())
+  const {handleInputChange, form} = useForm({
+    nombre: "",
+    apellido: "",
+    mail: ""
+  })
+
+  const setFocus = ( node ) => {
+    alert('Se hizo click!')
+    node.focus()
+  }
+
+const inputClassName = (name) => {
+    return form[name].length < 5 ? "input-red" : "input-green"
+  } 
+
+  const handleSubmit = (e) => {
+    e.preventDefaul()
+    const data = {
+      "name" : form.nombre,
+      "lastname" : form.apellido,
+      "mail" : form.mail
     }
-    const betch = writeBatch(db)
-    const outOfstock = []
-    const ids = cart.map(prod =>prod.id)
-    const productRef = collection(db, 'product')
-    const productfire = await getDocs(query(productRef,where(documentId(), )))
-}
-}
-
-if(Loading) { return <h1>Se esta generando su orden...</h1>}
-if(orderid) { return <h1>El id de tu orden es : </h1>} */
+   /*  -------enviar a --------- */
+  }
 
   return (
-    <div>
-       {/*  <h1>Pedido</h1>
-        <CheckoutForm onConfirm = {createOrder}/> */}
-
-    </div>
+    <>
+      <h1>Mi segunda App en React!</h1>
+      <form onSubmit={handleSubmit} className='user-form'>
+        <input
+          name='nombre'
+          placeholder='Ingrese Nombre...'
+          className={inputClassName('nombre')}
+          ref={inputRef}
+          type="text"
+          value={form.nombre}
+          onChange={(e) => {handleInputChange(e)}}
+        />
+        <input
+          name='apellido'
+          placeholder='Ingrese Apellido...'
+          className={inputClassName('apellido')}
+          type="text"
+          value={form.apellido}
+          onChange={(e) => {handleInputChange(e)}}
+        />
+        <input
+          name='mail'
+          placeholder='Ingrese Mail...'
+          className={inputClassName('Mail')}
+          type="number"
+          value={form.edad}
+          onChange={(e) => {handleInputChange(e)}}
+        />
+      </form>
+      <button type='submit' onClick={() => { setFocus(inputRef.current)}}>
+        Click!
+      </button>
+    </>
   )
 }

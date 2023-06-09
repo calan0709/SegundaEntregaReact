@@ -20,7 +20,10 @@ export const Navbar = ({mgs}) => {
               <li><NavLink to= '/Carro' className='nav-link'>Carro</NavLink></li>
 
             </ul>
-              <Carro/>
+                <div>
+                  <p>5</p>
+                  <p>🛒</p>
+                </div>
           </div>
         </nav>
     </>
